@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import 'flowbite/dist/flowbite.min.css';
+
+
+@keyframes moveRight {
+  from {
+    transform: translateX(-10px);
+  }
+  to {
+    transform: translateY(20px); 
+  }
+}
+
+@keyframes moveLeft{
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateY(20px); 
+  }
+}
+
+.animate-move-left {
+  animation: moveLeft 3s ease-in infinite;
+}
+.animate-move-right {
+  animation: moveRight 3s ease-in infinite;
+}
