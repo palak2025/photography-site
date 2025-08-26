@@ -19,7 +19,7 @@ const Home = () => {
 
     tl.to(overlayRef.current, {
       opacity: 0,
-      duration: 1.5,
+      duration: 1.9,
       ease: "power3.inOut",
     });
 
@@ -29,11 +29,11 @@ const Home = () => {
       {
         opacity: 1,
         y: 0,
-        duration: 1.5,
+        duration: 1.9,
         ease: "power3.out",
         stagger: 0.2,
       },
-      "-=0.7"
+      "-=1.2"
     );
 
     return () => tl.kill();
