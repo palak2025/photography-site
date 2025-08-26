@@ -16,14 +16,14 @@ const Home = () => {
       y: 30,
     });
 
-    // Animate overlay out
+
     tl.to(overlayRef.current, {
       opacity: 0,
       duration: 1.5,
       ease: "power2.inOut",
     });
 
-    // Animate text in with a slight delay
+ 
     tl.to(
       ".fade-in",
       {
