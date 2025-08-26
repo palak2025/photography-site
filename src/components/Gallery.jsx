@@ -124,7 +124,7 @@ const Gallery = () => {
                 </div>
             </div>
 
-            {/* SECTION 2: Photography Templates */}
+          
             <div className="gallery-section-2">
                 <div className="h-full bg-black pt-10 text-white flex flex-col items-center font-bold text-5xl text-center">
                     <h1 className="bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-3 fade-in-down-stagger">
@@ -142,7 +142,7 @@ const Gallery = () => {
                 </div>
             </div>
 
-            {/* SECTION 3: Latest Work Gallery */}
+          
             <div className="gallery-section-3">
                 <div className="font-bold font-extralight text-2xl mt-12 py-12 text-center fade-in-stagger">
                     <h1>Latest work Gallery</h1>
