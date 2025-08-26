@@ -30,7 +30,7 @@ const Home = () => {
         opacity: 1,
         y: 0,
         duration: 1.9,
-        ease: "power3.out",
+        ease: "power3.inOut",
         stagger: 0.2,
       },
       "-=1.2"
