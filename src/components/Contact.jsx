@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Button, Checkbox, Label, TextInput, Textarea } from "flowbite-react";
 import { HiMail } from 'react-icons/hi';
 import { gsap } from 'gsap';
+import Navbar1 from './Navbar';
 
 const Contact = () => {
   useEffect(() => {
@@ -12,7 +13,10 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className='flex items-center justify-center min-h-screen w-full bg-gray-700 p-6'>
+    <>
+         <Navbar1/>
+          <div className='flex items-center justify-center min-h-screen w-full bg-gray-700 p-6'>
+         
       <form className="bg-white shadow-md rounded-xl p-8 w-full max-w-md mx-auto">
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-6 form-field">Book a session with us!</h1>
  
@@ -46,6 +50,8 @@ const Contact = () => {
         <Button type="submit" className='form-field font-bold bg-indigo-600 hover:bg-indigo-700 text-white mt-6 ml-28 flex items-center justify-center w-40 h-10'>Submit</Button>
       </form>
     </div>
+    </>
+   
   );
 };
 

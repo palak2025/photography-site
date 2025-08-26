@@ -2,27 +2,51 @@
 @import 'flowbite/dist/flowbite.min.css';
 
 
+
+
+/* Keyframes */
 @keyframes moveRight {
   from {
     transform: translateX(-10px);
   }
   to {
-    transform: translateY(20px); 
+    transform: translateY(20px);
   }
 }
 
-@keyframes moveLeft{
+@keyframes moveLeft {
   from {
     transform: translateX(0px);
   }
   to {
-    transform: translateY(20px); 
+    transform: translateY(20px);
   }
 }
 
+/* Animation Classes */
 .animate-move-left {
-  animation: moveLeft 3s ease-in infinite;
+  animation: moveLeft 3s ease-in-out infinite;
 }
+
 .animate-move-right {
-  animation: moveRight 3s ease-in infinite;
+  animation: moveRight 3s ease-in-out infinite;
+}
+
+/* Responsive Scaling for Animated Cards */
+@media (max-width: 768px) {
+  .animate-move-left,
+  .animate-move-right {
+    width: 120px !important;
+    height: 120px !important;
+    animation-duration: 2.5s;
+  }
+}
+
+@media (max-width: 480px) {
+  .animate-move-left,
+  .animate-move-right {
+    width: 90px !important;
+    height: 90px !important;
+    animation-duration: 2s;
+  }
 }

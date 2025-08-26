@@ -4,6 +4,7 @@ import '../index.css';
 import MyCarousel from "./Carousel";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Navbar1 from "./Navbar";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,7 +12,7 @@ const Gallery = () => {
     const mainContainer = useRef(null);
 
     useEffect(() => {
-        // Timeline for the first section (Client Galleries)
+       
         const tl1 = gsap.timeline({
             scrollTrigger: {
                 trigger: ".gallery-section-1",
@@ -89,7 +90,7 @@ const Gallery = () => {
 
     return (
         <div ref={mainContainer}>
-           
+           <Navbar1/>
             <div className="gallery-section-1 flex justify-center items-center py-16 px-6 bg-[url(https://images.unsplash.com/photo-1507643179773-3e975d7ac515?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]">
                 <div className="w-full max-w-4xl rounded-4xl shadow-2xl bg-gray-800 text-gray-400 shadow-xl p-12">
                     <h1 className="text-4xl font-bold tracking-tight mb-6 uppercase fade-in-up">

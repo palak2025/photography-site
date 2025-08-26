@@ -1,23 +1,21 @@
-import React from 'react';
-import Contact from './components/Contact'; 
-import Gallery from './components/Gallery';
+import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
-import { Route, Routes } from 'react-router-dom';
+import Contact from './components/Contact';
+import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 
 
 function App() {
   return (
     <>
-      <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/gallery' element={<Gallery/>}/>
-          <Route path='/contact' element={<Contact/>}/> 
-      </Routes>
       
-       <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/gallery" element={<Gallery />} />
+      </Routes>
+      <Footer />
     </>
-   
   );
 }
 
