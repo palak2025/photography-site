@@ -4,7 +4,7 @@
 
 
 
-/* Keyframes */
+
 @keyframes moveRight {
   from {
     transform: translateX(-10px);
@@ -23,7 +23,7 @@
   }
 }
 
-/* Animation Classes */
+
 .animate-move-left {
   animation: moveLeft 3s ease-in-out infinite;
 }
@@ -32,7 +32,7 @@
   animation: moveRight 3s ease-in-out infinite;
 }
 
-/* Responsive Scaling for Animated Cards */
+
 @media (max-width: 768px) {
   .animate-move-left,
   .animate-move-right {
